@@ -1,0 +1,107 @@
+/*
+##### SELECTORES #####
+*/
+
+/* SELECTOR UNIVERSAL (*) */
+
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* SELECTOR DE ETIQUETA (h1, p, a, etc...) */
+h1 {
+    background: red;
+    color: white;
+    padding: 10px;
+}
+
+a {
+    font-size: 18px;
+    /*color: green;
+  color: #9bdeac;*/
+    color: #e7305b;
+    text-decoration: none;
+}
+
+footer a {
+    /*color: red;*/
+    color: #e7305b;
+}
+
+/* SELECTOR DE id (#id) */
+#descripcion,
+#titulo {
+    border: 5px solid #faf0af;
+    padding: 15px;
+}
+
+#titulo {
+    background: #f1c5c5;
+    color: #383e56;
+    border: 2px dashed white;
+}
+
+/* SELECTOR DE CLASE (.class)*/
+.parrafo {
+    font-style: italic;
+    /*text-decoration: underline;*/
+    font-weight: bold;
+}
+
+.parrafo1,
+.parrafo3 {
+    background-color: #c7e2b2;
+    color: #5a3d55;
+    padding: 10px;
+}
+
+.parrafo3 {
+    background-color: #e1ffc2;
+    color: #f37121;
+}
+
+/* SELECTOR DE ATRIBUTO (etiqueta[atributo])*/
+#usuario form {
+    border: 5px solid #01a9b4;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding: 20px;
+}
+
+#usuario form * {
+    display: block;
+}
+
+input[type="text"] {
+    margin-bottom: 15px;
+    padding: 5px;
+    width: 300px;
+}
+
+input[type="submit"] {
+    background: #32e0c4;
+    color: #eeeeee;
+    padding: 15px;
+    font-size: 15px;
+    text-transform: uppercase;
+    border: 2px solid green;
+    cursor: pointer;
+}
+
+/* SELECTORES HIJO (etiqueta > etiqueta )*/
+#menu>li>a {
+    font-size: 18px;
+    color: #9bdeac;
+    text-decoration: none;
+}
+
+/* Prioridad */
+#saludo h1 {
+    background: #a8df65;
+}
+
+/*
+h1 {
+  background: #f3c623 !important;
+}
+*/
