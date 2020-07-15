@@ -1,0 +1,49 @@
+@font-face {
+    font-family: MonserratFuenteCustom;
+    src: url(fonts/Montserrat/Montserrat-Regular.ttf);
+}
+
+h1 {
+    /*font-family: Arial, Helvetica, sans-serif;*/
+    /*font linkeada en html*/
+    font-family: 'Mansalva', cursive;
+    font-style: italic;
+    text-transform: uppercase;
+    font-size: 45px;
+}
+
+h3 {
+    font-family: MonserratFuenteCustom, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 35px;
+    font-weight: lighter;
+}
+
+p {
+    /*font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;*/
+    font-family: sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+/*Colores*/
+
+/* Colores del sistema */
+p {
+    color: red;
+}
+
+/* Colores hexadecimales */
+p {
+    color: #726a95;
+}
+
+/* Colores RGB */
+p {
+    color: rgb(165, 42, 42);
+}
+
+/* Colores RGBA */
+p {
+    color: rgba(165, 42, 42, 0.5);
+}

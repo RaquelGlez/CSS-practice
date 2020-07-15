@@ -1,0 +1,44 @@
+/*body {
+    /*background: red;--*----
+background-color: #ccc;
+/*background-image: url(img/patron3.png);
+    background-repeat: no-repeat;
+    background-size: 100%;  --*----
+    background-image: url(img/fondo1.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    color: white;
+    background-position: left bottom;
+}*/
+
+/*propiedades para texto*/
+body {
+  background-color: #ccc;
+  color: black;
+  text-indent: 15px;
+  /*word-spacing: 10px;
+  letter-spacing: 5px;*/
+}
+
+#caja {
+  border: 5px solid black;
+  padding: 10px;
+  background-color: rgb(230, 104, 59);
+  color: white;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  text-align: center;
+  line-height: 50px;
+  text-transform: uppercase;
+  text-decoration: line-through;
+  vertical-align: top;
+}
+
+h2 {
+  color: red;
+  background-color: white;
+  background-image: url(img/patron2.jpg);
+  border: 5px solid yellow;
+  padding: 10px;
+}
