@@ -1,0 +1,219 @@
+body {
+  text-align: center;
+  font-family: sans-serif;
+}
+
+/*--------------- Ejercicio completo Áreas------------------------*/
+
+#website * {
+  margin: 0px;
+  padding: 0px;
+}
+
+#website-areas {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 150px 70px 1fr 70px;
+  grid-template-areas:
+    "cabecera cabecera cabecera cabecera cabecera"
+    "menu menu menu menu menu"
+    "contenido contenido contenido contenido lateral"
+    "pie pie pie pie pie ";
+  grid-gap: 20px;
+  /* grid-column-gap: 20px;
+  grid-row-gap: 20px; */
+  width: 75%;
+  height: 1000px;
+  margin: 0px auto;
+  border: 1px solid #ccc;
+}
+
+#website-areas #cabecera {
+  grid-area: cabecera;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #93b5e1;
+  color: #f5f1da;
+}
+
+#website-areas #menu {
+  grid-area: menu;
+  background-color: #848ccf;
+  color: #f5f1da;
+  line-height: 70px;
+}
+
+#website-areas #menu ul {
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  list-style: none;
+}
+
+#website-areas #contenido {
+  grid-area: contenido;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 25px;
+  padding: 20px;
+  background-color: #ffe4e4;
+}
+
+#website-areas #contenido article {
+  background-color: #d9adad;
+  border: 1px solid #555;
+}
+
+#website-areas #lateral {
+  grid-area: lateral;
+  background-color: #be5683;
+  color: #f5f1da;
+}
+
+#website-areas #pie-pagina {
+  grid-area: pie;
+  background-color: #1d1b38;
+  color: #f5f1da;
+}
+
+/*--------------- Ejercicio completo ------------------------*/
+
+#website * {
+  margin: 0px;
+  padding: 0px;
+}
+
+#website {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  /* grid-template-rows: repeat(4, 1fr); */
+  grid-template-rows: 150px 70px 1fr 70px;
+
+  align-items: ;
+  width: 75%;
+  /* height: 100vh; */
+  height: 1000px;
+  margin: 0px auto;
+  border: 1px solid #ccc;
+}
+
+#website #cabecera {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  grid-column: 1 / 6;
+  background-color: #93b5e1;
+  color: #f5f1da;
+}
+
+#website #menu {
+  grid-column: 1 / 6;
+  background-color: #848ccf;
+  color: #f5f1da;
+  line-height: 70px;
+}
+
+#website #menu ul {
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  list-style: none;
+}
+
+#website #contenido {
+  grid-column: 1 / 5;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 25px;
+  padding: 20px;
+  background-color: #ffe4e4;
+}
+
+#website #contenido article {
+  background-color: #d9adad;
+  border: 1px solid #555;
+}
+
+#website #lateral {
+  grid-column: 5 / 6;
+  background-color: #be5683;
+  color: #f5f1da;
+}
+
+#website #pie-pagina {
+  grid-column: 1 / 6;
+  background-color: #1d1b38;
+  color: #f5f1da;
+}
+
+/*------------- Conceptos ----------------------------------------*/
+
+.layout {
+  width: 80%;
+  /* height: 400px; */
+  /* min-height: 400px; */
+  height: 600px;
+  margin: 0px auto;
+  /* Definir el grid layout*/
+  display: grid;
+
+  /* grid-template-columns: calc(50% - 10px) calc(50% - 10px); */
+  /* grid-template-columns: 25% 25% 25% 25%; */
+  /* grid-template-columns: 50% 25%; */
+  /* grid-template-columns: repeat(4, calc(25% - 10px)); */
+  grid-template-columns: repeat(3, 1fr);
+  /* grid-template-rows: 1fr 1fr 1fr; */
+  grid-template-rows: repeat(2, 1fr) 2fr repeat(2, 1fr);
+
+  /* Espacio entre elementos grid*/
+  grid-gap: 10px;
+
+  padding: 10px;
+  border: 3px solid orangered;
+}
+
+.layout .caja {
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  padding: 20px;
+  border: 4px solid #222;
+  /* margin: 10px; */
+  background-color: gray;
+}
+
+.layout .red {
+  /* grid-column-start: 1;
+    grid-column-end: 3; */
+  grid-column: 1 / 4;
+  background-color: red;
+}
+
+.layout .green {
+  /* grid-row-start: 2;
+    grid-row-end: 4; */
+  grid-row: 2 / 6;
+  background-color: green;
+}
+
+.layout .blue {
+  grid-column: 2 / 4;
+  background-color: blue;
+}
+
+.layout .pink {
+  grid-column: 2 / 3;
+  grid-row: 3 / 5;
+  background-color: pink;
+}
+
+.layout .orange {
+  grid-row: 3 / 5;
+  background-color: orange;
+}
+
+.layout .lightblue {
+  grid-column: 2 / 4;
+  background-color: lightblue;
+}
